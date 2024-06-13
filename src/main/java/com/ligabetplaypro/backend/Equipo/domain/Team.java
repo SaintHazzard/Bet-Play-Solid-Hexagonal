@@ -21,7 +21,8 @@ public class Team {
     Long id;
     String name;
 
-    @OneToMany(mappedBy = "team", cascade = CascadeType.REFRESH, orphanRemoval = true)
+    @OneToMany(mappedBy = "team", cascade = { CascadeType.REFRESH, CascadeType.PERSIST,
+            CascadeType.MERGE, CascadeType.DETACH }, orphanRemoval = true)
     List<IntegranteEquipo> players;
     protected int pg;
     protected int pj;
