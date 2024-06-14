@@ -7,7 +7,7 @@ import java.util.List;
 import com.ligabetplaypro.backend.Equipo.domain.Team;
 
 public interface TeamRepositoryPort {
-  Team save(Team partido);
+  Team save(Team team);
 
   Optional<Team> findById(Long id);
 

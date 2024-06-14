@@ -4,7 +4,7 @@ import com.ligabetplaypro.backend.Equipo.domain.Team;
 
 // Clase que gestiona unicamente las estadisticas de los equipos.
 public class TeamStatsManager {
-    public void addMatchPlayed(Team team) {
+    private void addMatchPlayed(Team team) {
         team.setPj(team.getPj() + 1);
     }
 
